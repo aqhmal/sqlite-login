@@ -12,7 +12,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     public static final String EMAIL = "email";
     public static final String PASSWORD = "password";
 
-    public SQLiteHelper(Context context) {
+    SQLiteHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
 
@@ -31,3 +31,4 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
     }
 }
+
